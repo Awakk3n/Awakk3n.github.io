@@ -237,6 +237,7 @@ section {
   flex: 1;
   text-align: center;
   position: relative;
+  
 }
 
 .hero-image img {
@@ -318,7 +319,7 @@ section {
 }
 
 .about-image img {
-  max-width: 100%;
+  max-width: 90%;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
 }
