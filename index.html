@@ -1,9 +1,218 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>
-            Hello there, This is Abhinav!
-        </h1>
-        <p>I'm hosted with GIthub Pages</p>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name • Product Manager & Blogger</title>
+
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Google Fonts (Example: Poppins + Roboto) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="logo">
+        <!-- If you have a logo, put <img src="assets/logo.png" alt="Logo" /> -->
+        YourName
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME / HERO SECTION -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="hero-text" data-aos="fade-up">
+        <h1>👋 Hello, I'm <span>Your Name</span></h1>
+        <p>Product Manager | Blogger | Storyteller</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+      <div class="hero-image" data-aos="fade-left">
+        <!-- Replace with your portrait or illustration -->
+        <img src="assets/hero-image.png" alt="Your Portrait" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-right">
+        <h2>About Me</h2>
+        <p>Product Manager by day, blogger by night.</p>
+      </div>
+      <div class="about-content" data-aos="fade-up">
+        <div class="about-text">
+          <p>
+            I’m a passionate product manager with over 5 years of experience building
+            user-centric web and mobile applications. I love diving into data, crafting roadmaps,
+            and writing about what I learn along the way.
+          </p>
+          <p>
+            Outside of work, you’ll find me tinkering with no-code tools, reading product
+            blogs, or drafting my next article on <em>User Autonomy</em> and <em>Dark Nudging</em>.
+          </p>
+        </div>
+        <div class="about-image">
+          <!-- Optional: a headshot or illustration -->
+          <img src="assets/about-photo.jpg" alt="About Me" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <div class="section-header" data-aos="fade-right">
+        <h2>Projects & Products</h2>
+        <p>Some highlights from my work.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="zoom-in">
+          <h3>Alteryx Automation Tool</h3>
+          <p>
+            Automated data ingestion and field mapping in Alteryx workflows, saving 20+ hours/week
+            for the data team.
+          </p>
+          <a href="#" class="card-link">Learn More →</a>
+        </div>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+          <h3>Power Automate Flow Set</h3>
+          <p>
+            Built a set of approval flows with adaptive cards, reducing approval time from 48h to
+            under 4h.
+          </p>
+          <a href="#" class="card-link">Learn More →</a>
+        </div>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+          <h3>Loan Analytics Dashboard</h3>
+          <p>
+            Interactive dashboard tracking credit trends using Python, SQL, and Excel, adopted by 3
+            stakeholder teams.
+          </p>
+          <a href="#" class="card-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG SECTION -->
+  <section id="blog" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-right">
+        <h2>Blog & Articles</h2>
+        <p>Thoughts on Product, UX, and Data.</p>
+      </div>
+      <div class="blog-list">
+        <div class="blog-card" data-aos="fade-up">
+          <h4><a href="https://yourblog.com/user-autonomy" target="_blank">The Principle of User Autonomy</a></h4>
+          <p>
+            How letting users take control can increase engagement and trust. (April 12, 2025)
+          </p>
+        </div>
+        <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
+          <h4><a href="https://yourblog.com/dark-nudging" target="_blank">Understanding Dark Nudging</a></h4>
+          <p>
+            Examining ethical boundaries in UI design. (March 28, 2025)
+          </p>
+        </div>
+        <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+          <h4><a href="https://yourblog.com/data-driven-decision-making" target="_blank">Data-Driven Decision Making</a></h4>
+          <p>
+            Leveraging analytics to prioritize product features. (February 10, 2025)
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <div class="section-header" data-aos="fade-right">
+        <h2>Contact Me</h2>
+        <p>Let’s connect!</p>
+      </div>
+      <div class="contact-content" data-aos="fade-up">
+        <form
+          action="https://formspree.io/f/your-form-ID"
+          method="POST"
+          class="contact-form"
+        >
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+          <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+          <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Your Name. Built with ❤️ and AOS Animation.</p>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+
+    // Hamburger menu toggle for mobile
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document
+          .querySelector(this.getAttribute('href'))
+          .scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (navLinks.classList.contains('open')) {
+          navLinks.classList.remove('open');
+          hamburger.classList.remove('active');
+        }
+      });
+    });
+  </script>
+</body>
 </html>
