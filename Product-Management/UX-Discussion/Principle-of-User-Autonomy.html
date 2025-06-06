@@ -7,13 +7,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css"/>
+    <!-- AOS (Animate On Scroll) CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css"/> -->
 </head>
 
 <body>
- 
-     <header>
+ <!-- NAVBAR -->
+ <nav class="navbar">
+    <div class="navcontainer">
+      <a href="https://awakk3n.github.io/" class="logo">Abhinav Anurag</a>
+      <ul class="nav-links">
+        <li><a href="https://awakk3n.github.io/" class="active"> <b>Home</b></a></li>
+        <li><a href="https://awakk3n.github.io/#about"><b>About</b></a></li>
+        <li><a href="https://awakk3n.github.io/#projects"><b>Projects</b></a></li>
+        <li><a href="https://awakk3n.github.io/#blog"><b>Blog</b></a></li>
+        <li><a href="https://awakk3n.github.io/#contact"><b>Contact</b></a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+     <div class="new-header">
         <!-- <div id="particles-js"></div> -->
-            <div class="header-content">
+            <div class="new-header-content">
                 <h1>The Principle of User Autonomy</h1>
                 <p2 class="tagline" >Why Giving Control to Your Users Is a Win-Win</p2>
                 <div class="meta">
@@ -22,14 +47,13 @@
                     <span><i class="fas fa-user-edit"></i> Abhinav</span>
                 </div>
             </div>
-    </header>
+     </div>
 
    
-    <div class="container">
-        
+    <div class="container">        
         <main class="content">
-                <!-- <section id="about"> -->
-                <!-- <h3>What is Principle of User Autonomy</h3> -->
+                <section id="core-idea">
+                <h2>The Core Idea</h2>
                     <p>The Principle of User Autonomy is a fundamental tenet in user experience (UX) and product design that emphasizes giving users control over their interactions and decisions within a product or system. This principle ensures that users feel empowered rather than constrained while using an application or service, fostering a sense of ownership and confidence in their digital experiences. 
                         It's about empowering users with the freedom to make choices and adapt the experience to their needs, rather than forcing them into a rigid, predetermined path. 
                     </p>
@@ -42,20 +66,18 @@
                         "The best interfaces aren't those that dictate the user's path, but those that empower the user to forge their own."
                         <span class="quote-author">— Sarah Johnson, UX Director at DesignInnovate</span>
                     </div>
-                    <!-- </section> -->
 
-            <section id="core-idea">
-                <h2>The Core Idea</h2>
+    
                 <p>User Autonomy refers to the capability for users to make their own choices, control their tasks, and recover from mistakes without feeling restricted by the product. This foundational concept in UX design recognizes that users are individuals with unique needs, preferences, and workflows.</p>
                 
                 <h3>In practice, this means:</h3>
-                <ul>
+                <ol>
                     <li><strong>Opt-in/Opt-out freedom:</strong> Allowing users to choose which features they engage with</li>
                     <li><strong>Recovery paths:</strong> Providing clear ways to undo or backtrack actions</li>
                     <li><strong>Flexible defaults:</strong> Ensuring that preset options can be easily overridden</li>
                     <li><strong>Escape routes:</strong> Minimizing "forced" flows where users feel trapped</li>
                     <li><strong>Customization:</strong> Enabling personalization of interfaces and workflows</li>
-                </ul>
+                </ol>
                 
                 <div class="interactive-demo">
                     <h3>User Control Spectrum</h3>
@@ -111,18 +133,18 @@
                         <div class="timeline-date">Case Study: E-commerce Platform</div>
                         <div class="timeline-content">
                             <p>After implementing a robust undo system and flexible checkout flow, CartFlow saw:</p>
-                            <ul>
+                            <ol>
                                 <li>42% reduction in cart abandonment</li>
                                 <li>28% increase in average order value</li>
                                 <li>63% fewer support tickets about accidental purchases</li>
-                            </ul>
+                            </ol>
                         </div>
                     </div>
                 </div>
             </section>
             
             <section id="components">
-                <h2>C. Components of User Autonomy</h2>
+                <h2>Components of User Autonomy</h2>
                 <p>These essential elements work together to create truly autonomous user experiences:</p>
                 
                 <div class="examples-grid">
@@ -192,7 +214,7 @@
                 <h2>Best Practices for Implementation</h2>
                 <p>Successfully implementing user autonomy requires thoughtful execution:</p>
                 
-                <ul>
+                <ol>
                     <li><strong>Immediate Feedback:</strong> Confirm reversals with clear messages (e.g., "Changes reverted")</li>
                     <li><strong>Avoid Modal Overload:</strong> Reserve blocking dialogs for critical confirmations only</li>
                     <li><strong>Document Reversible Actions:</strong> Highlight undo capabilities in help content</li>
@@ -200,7 +222,7 @@
                     <li><strong>Flexible Navigation:</strong> Provide persistent navigation options like breadcrumbs</li>
                     <li><strong>Consistent Patterns:</strong> Maintain familiar interaction patterns across the product</li>
                     <li><strong>Accessible Controls:</strong> Ensure autonomy features are available to all users</li>
-                </ul>
+                </ol>
                 
                 <div class="section-highlight">
                     <h3>The Progressive Disclosure Advantage</h3>
@@ -249,13 +271,13 @@
                 <h2>Common Pitfalls to Avoid</h2>
                 <p>Even well-intentioned autonomy implementations can go wrong:</p>
                 
-                <ul>
+                <ol>
                     <li><strong>Partial Undo:</strong> An "Undo" that only reverses the last step while leaving intermediate changes intact creates confusion and distrust</li>
                     <li><strong>Hidden Exits:</strong> Processes requiring multiple confirmation dialogs (like subscription cancellations) increase frustration exponentially</li>
                     <li><strong>Ambiguous Defaults:</strong> Vague language like "We assume consent" undermines transparency</li>
                     <li><strong>Forced Onboarding:</strong> Preventing users from skipping setup screens strips away autonomy</li>
                     <li><strong>Overwhelming Choices:</strong> Presenting too many options can create decision paralysis</li>
-                </ul>
+                </ol>
                 
                 <div class="dark-nudge-warning">
                     <i class="fas fa-exclamation-triangle"></i>
@@ -270,13 +292,13 @@
                 <h2>Measuring Success</h2>
                 <p>Quantify autonomy effectiveness through these metrics:</p>
                 
-                <ul>
+                <ol>
                     <li><strong>User Satisfaction:</strong> Track NPS/CSAT scores specifically around "ease of control" and "freedom"</li>
                     <li><strong>Support Analysis:</strong> Monitor tickets related to "unable to undo" or "can't exit" issues</li>
                     <li><strong>Behavioral Metrics:</strong> Identify abandonment spikes in complex flows indicating trapped feelings</li>
                     <li><strong>Feature Adoption:</strong> Measure usage of customization and personalization features</li>
                     <li><strong>Error Recovery Rates:</strong> Track how often users successfully recover from mistakes</li>
-                </ul>
+                </ol>
             </section>
             
             <section id="conclusion">
@@ -374,21 +396,44 @@
         </aside>
     </div>
     
-    <footer>
-        <div class="footer-content">
-            <h3>Design with Respect, Build with Autonomy</h3>
-            <p>Creating products that honor user agency leads to more ethical, sustainable, and successful digital experiences.</p>
-            
-            <div class="footer-links">
-                <a href="#"><i class="fab fa-medium"></i> Read more articles</a>
-                <a href="#"><i class="fas fa-book"></i> UX Principles Guide</a>
-                <a href="#"><i class="fas fa-podcast"></i> Design Ethics Podcast</a>
-                <a href="#"><i class="fas fa-file-download"></i> Download Resources</a>
-            </div>
-            
-            <p class="copyright">© 2025 UX Design Journal. All rights reserved. The Principle of User Autonomy.</p>
+    <footer class="footer">
+    <div class="footcontainer">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>Abhinav</h4>
+          <p3>Associate Product Manager focused on creating user-centric digital experiences that solve real problems and deliver measurable business value.</p3>
         </div>
-    </footer>
+        
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#">UX Design Principles</a></li>
+            <li><a href="#">Product Management Toolkit</a></li>
+            <li><a href="#">Data Analytics Guide</a></li>
+            <li><a href="#">Case Studies</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p3>© 2025 Abhinav. All rights reserved. Designed and built with ❤️</p3>
+      </div>
+    </div>
+  </footer>
+
     <script src= "assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src= ".../assets/script.js"></script>
 </body>
 </html>
