@@ -637,7 +637,7 @@ section {
   font-size: 1.3rem;
   margin-bottom: 25px;
   position: relative;
-  padding-bottom: 10px;
+  padding: 10px 10px 10px;
 }
 
 .footer-col h4::after {
@@ -664,7 +664,7 @@ section {
 }
 
 .footer-links a {
-  color: #adb5bd;
+  color: #bcdcde;
   text-decoration: none;
   transition: var(--transition);
 }

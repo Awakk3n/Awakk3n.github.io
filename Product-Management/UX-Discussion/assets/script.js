@@ -1530,7 +1530,7 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
   xhr.send();
 
 };
-
+// ----------------------------------------------------------------------------
 document.addEventListener('DOMContentLoaded', function() {
     // Table of Contents highlighting
     const tocLinks = document.querySelectorAll('.toc a');
@@ -1572,6 +1572,8 @@ hamburger.addEventListener('click', () => {
 particlesJS.load('particles-js', 'assets/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
+
+
     // Update active TOC item on scroll
     window.addEventListener('scroll', function() {
         let current = '';
